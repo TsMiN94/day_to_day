@@ -52,7 +52,7 @@ String b= new String("Java");
 a.hashCode() = 3254818
 b.hashCode() = 3254818
 </pre>
-이러한 이유는 String 클래스에 제공하는 hashCode()의 형식이 실제로 Object클래스의 hashCode 와는 다르게 재정의 하여 구현이 되어 있기 때문이다.
+이러한 이유는 String 클래스에 제공하는 hashCode()의 구현이 실제로 Object클래스의 hashCode()와는 다르게 재정의 하여 구현이 되어 있기 때문이다.
 또한 다른 객체라 하더라도 hashCode값은 동일할 수 있는데 이렇기에 우리는 equals를 통해 false값이 나오더라도 hashCode의 값이 꼭 다를 필요가
 없다는것을 알아야한다.<br><br>
 </ul>
