@@ -2,12 +2,12 @@
 
 ## 2019-07-15 ~ 2019-07-22 <br>
 <ul>
-  *JDK에 대한 내용 정리 <br> v
-  *Java에 특징 <br>v
-  *Interface,abstract <br>v
-  *Hash <br> 
-  *Session,Cookie <br> v
-  *Process,Thread <br> v 
+  *JDK에 대한 내용 정리 :heavy_check_mark: <br> 
+  *Java에 특징 :heavy_check_mark:  <br>
+  *Interface,abstract :heavy_check_mark: <br>
+  *Hash  <br> 
+  *Session,Cookie :heavy_check_mark: <br> 
+  *Process,Thread :heavy_check_mark:<br> 
   *java의 main 메서드가 static인 이유 <br>
   *OOP의 5대 원칙 (SOLID) <br>
   *java와 c/c++의 차이점 <br>
