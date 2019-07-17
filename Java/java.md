@@ -1,5 +1,26 @@
 ## Java
 
+## 2019-07-15 ~ 2019-07-22 <br>
+<ul>
+  *JDK에 대한 내용 정리 <br> v
+  *Java에 특징 <br>v
+  *Interface,abstract <br>v
+  *Hash <br> 
+  *Session,Cookie <br> v
+  *Process,Thread <br> v 
+  *java의 main 메서드가 static인 이유 <br>
+  *OOP의 5대 원칙 (SOLID) <br>
+  *java와 c/c++의 차이점 <br>
+  *java의 제네릭(Generic)과 c++의 템플릿(Template)의 차이 <br>
+  *JVM 구조 <br>
+  *Annotation <br>
+  *java에서 '=='와 'equals()'의 차이 <br>
+  *동기화와 비동기화의 차이(Syncronous vs Asyncronous) <br>
+  *java의 리플렉션(Reflection) 이란  <br>
+</ul>
+
+
+
 ### 0715
 
 #### JDK,JRE,JVM
@@ -38,7 +59,7 @@ Java 어플리케이션을 실행 시킬 수 있다. <br><br>
 상속받은 자식클래스에 추상메소드를 구현해야만 한다.
 </ul>
 
-#### HashCode와 그 의미
+#### HashCode , HashTable
 <ul>
 ● HashCode는 객체의 고유한 정숫값을 말한다. 객체를 비교할 때 우리는 equals()를 사용하여 객체를 비교하는데 이 때 HashCode를
 보고 비교하게 된다. 그렇지만 String 클래스에서는 조금 다르다. HashCode는 객체마다 고유한 정숫값을 가지고 있다고 했지만 실제로
@@ -57,8 +78,14 @@ b.hashCode() = 3254818
 없다는것을 알아야한다.<br><br>
 </ul>
 
+<ul>
+● HashTable
+
+
 <hr/>
 
+
+참고 :[네이버 D2](https://d2.naver.com/helloworld/831311)
 ### 0716
 
 #### Session , Cookie
@@ -69,10 +96,18 @@ b.hashCode() = 3254818
 
 #### Process , Thread
 <ul>
-● Process :
+● Process 
+  * 정의: 프로그램이 메모리에 적재되면 Process라고 하며, 하나 이상의 Thread를 가지고 있고 Thread 단위로 스케쥴링을 하여 작업을 한다. 프로세스끼리 메모리 공유를 하기 위해선 4가지 방법이 있다. (운영체제 분야에서 다루겠음) <br> 
+  * 구성: code영역, data영영, heap영역, stack영역으로 구성되어 있다.<br>
 <br><br>
-● Thread :
-<br><br>
+● Thread 
+  *정의: 프로세스 내에는 적어도 하나이상의 Thread가 존재하며 서로 메모리공유를 할 수 있다. <br>
+  *관리: 하나의 자원에 대해서 다수의 스레드가 동시적으로 접근할 경우 Synchronized를 해주어 동기화를 시켜주어야 한다.
+  <br><br>
+  
 </ul>
+
+### 0718 
+해쉬테이블 내용정리 , IPC , Dead Lock 내용정리 , 깃블로그 카테고리 수정 ,
 
 
