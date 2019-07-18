@@ -5,23 +5,12 @@
   *JDK에 대한 내용 정리 :heavy_check_mark: <br> 
   *Java에 특징 :heavy_check_mark:  <br>
   *Interface,abstract :heavy_check_mark: <br>
-  *Hash  <br> 
+  *Hash :heavy_check_mark: <br> 
   *Session,Cookie :heavy_check_mark: <br> 
   *Process,Thread :heavy_check_mark:<br> 
-  *java의 main 메서드가 static인 이유 <br>
-  *OOP의 5대 원칙 (SOLID) <br>
-  *java와 c/c++의 차이점 <br>
-  *java의 제네릭(Generic)과 c++의 템플릿(Template)의 차이 <br>
-  *JVM 구조 <br>
-  *Annotation <br>
-  *java에서 '=='와 'equals()'의 차이 <br>
-  *동기화와 비동기화의 차이(Syncronous vs Asyncronous) <br>
-  *java의 리플렉션(Reflection) 이란  <br>
 </ul>
 
 
-
-### 0715
 
 #### JDK,JRE,JVM
 <ul>
@@ -79,14 +68,23 @@ b.hashCode() = 3254818
 </ul>
 
 <ul>
-● HashTable
+● HashTable은 JRE1.0, JRE 1.1 버전의 어플리케이션에 대해서 하위 호완 지원을 위해서 사용되어지고 있다.
 
+:question: HashCode로 얻어낸 key로 value를 저장하려고 하는데 같은 key값에 대해서 충돌은 어떻게 해결하나 ? <br>
+<br>
+ 이 러한 문제는 Hash함수로 인해서 많은 메모리를 낭비하지 않기 위해서 필요한 원소의 M개 만큼의 배열만을 사용해서 value를 저장할 때 발생하게된다. <br> 
+<pre>
+ int index = hashCode("key") % M ;
+</pre>
 
+index는 같은 값이 나올 수 있게되고 이러한 문제는 Open Adressing , Seperate Chaining의 기법으로 해결할 수 있다.<br>
+ *Open Addressing 이란 같은 index가 나왔을경우 그 다음 index에 저장하는 방식이다. 이러한 방법은 데이터가 적을 경우 효율적이다. 데이터가 많게 되면 캐쉬 적중률 (hit ratio)가 낮아지기 때문이다. 또한 데이터가 많으면 삭제를 할경우 처리하기가 까다롭기 때문에 데이터가 적은 경우 사용한것이 적절한 방법이다. <br>
+ *Seperate Chaining 이란 인덱스가 겹칠경우 해당 연결리스트를 이용하여 노드를 하나 더 만들어 인덱스가 다음 포인터의 주소값을 가지게 됨으로써 index가 겹치는 문제를 해결할 수 있다. 또한 삭제할 경우 그 처리가 간단하다는 점이 있다. 그러나 이 방법 역시도 하나의 인덱스에 데이터가 밀집 될 경우가 있어 그경우에는 트리로 구현하는 것이 더 좋다고 한다.
+ <br>
 <hr/>
 
 
 참고 :[네이버 D2](https://d2.naver.com/helloworld/831311)
-### 0716
 
 #### Session , Cookie
 <ul>
@@ -106,8 +104,5 @@ b.hashCode() = 3254818
   <br><br>
   
 </ul>
-
-### 0718 
-해쉬테이블 내용정리 , IPC , Dead Lock 내용정리 , 깃블로그 카테고리 수정 ,
 
 
