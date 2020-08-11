@@ -66,7 +66,8 @@ b.hashCode() = 3254818
 또한 다른 객체라 하더라도 hashCode값은 동일할 수 있는데 이렇기에 우리는 equals를 통해 false값이 나오더라도 hashCode의 값이 꼭 다를 필요가
 없다는것을 알아야한다.<br><br>
 </ul>
-
+ 
+ 
 <ul>
 ● HashTable은 JRE1.0, JRE 1.1 버전의 어플리케이션에 대해서 하위 호완 지원을 위해서 사용되어지고 있다.
 
